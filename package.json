@@ -1,0 +1,16 @@
+{
+  "name": "course-cypress",
+  "version": "1.0.0",
+  "description": "Introducao ao javascript utilizando cypress",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "run": "cypress run"
+  },
+  "author": "Vitor Vicente",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.6.0",
+    "cypress-xpath": "^1.6.2"
+  }
+}
