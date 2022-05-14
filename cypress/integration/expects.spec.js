@@ -13,7 +13,7 @@ describe('Expects', function() {
         expect(idadeMaiorque18anos).not.eqls(17)
 
         let nomes = ['Joao','Maria','Catarina','Bruno']
-        expect(nomes[0]).equals('Joao').and.contains('Joa')
+        expect(nomes[0]).equals('Joao').and.contains('Joao')
 
         // se a maria e igual a maria
         // se a catarina e igual a catarina
