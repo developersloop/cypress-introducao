@@ -44,6 +44,7 @@ describe('Validando Valores expects', function () {
         expect(names[1]).not.to.equal('Catarina')
         expect(names[0]).not.to.equal('Bruno')
         expect(names[0]).contains('J')
+        expect(names[1]).contains('a')
 
 
 
