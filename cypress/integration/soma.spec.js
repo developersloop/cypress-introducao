@@ -12,7 +12,3 @@ export const soma  = numero1 + numero2;
 export const sub   = numero1 - numero2;
 export const div   = numero1 / numero2;
 export const mult  = numero1 * numero2;
-
-  
-
-

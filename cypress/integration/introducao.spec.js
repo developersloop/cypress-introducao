@@ -3,6 +3,7 @@
 // import  resultado from "./soma.spec"
 
 import {soma, sub, div, mult} from './soma.spec'
+import {vetor} from './array.spec'
 
 it('functions', function() {
 
@@ -30,6 +31,7 @@ it('functions', function() {
     console.log('O resultado da subtração é: ' + sub)
     console.log('O resultado da divisão é: ' + Math.round(div))
     console.log('O resultado da multiplicação é: ' + mult)
+    console.log('Aqui está a lista de QAs do time: ' + vetor) 
 
     //console.log(helloWorld())
     //console.log(somaValores())
