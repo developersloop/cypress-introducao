@@ -1,14 +1,22 @@
 /// <reference types="cypress" />
 
+// import  resultado from "./soma.spec"
+
+import {soma, sub, div, mult} from './soma.spec'
+import {vetor} from './array.spec'
+
 it('functions', function() {
 
     
     const helloWorld = () => "Curso Cypress"
 
     const somaValores = () => {
-        return 1 + 2
+        const estudarOque = () => "Cypress Pessoal"
+        return estudarOque()
+        
     }
-    
+     console.log(somaValores())
+
     function windowJs() {
         console.log(this)
     }
@@ -19,9 +27,17 @@ it('functions', function() {
 
     console.log('function', windowJs())
     console.log('arrow function', windowJsArrowFunction())
+    console.log('O resultado da soma é: ' + soma)
+    console.log('O resultado da subtração é: ' + sub)
+    console.log('O resultado da divisão é: ' + Math.round(div))
+    console.log('O resultado da multiplicação é: ' + mult)
+    console.log('Aqui está a lista de QAs do time: ' + vetor) 
+
     //console.log(helloWorld())
     //console.log(somaValores())
+    //console.log(estudarOque())
     
+   
 
 })
 
