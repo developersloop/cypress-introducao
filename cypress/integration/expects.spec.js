@@ -1,24 +1,24 @@
-/// <reference types="cypress" />
+/// <reference types='cypress' />
+/// Validar se valor é true
+/// Validar se valor é false
 
 describe('Expects', function() {
-    it.skip('Equality == ', function() {
+    it('Equality == ', function() {
         let idadeMaiorque18anos = 18
-
         expect(idadeMaiorque18anos).to.be.equals(18)
         expect(idadeMaiorque18anos).equals(18)
         expect(idadeMaiorque18anos).eqls(18)
+    })
+})
+describe('Validando Valores expects', function () {
 
-        expect(idadeMaiorque18anos).not.to.be.equals(17)
-        expect(idadeMaiorque18anos).not.equals(17)
-        expect(idadeMaiorque18anos).not.eqls(17)
-
+        let itstrue = true
         let nomes = ['Joao','Maria','Catarina','Bruno']
         expect(nomes[0]).equals('Joao').and.contains('J')
 
         // se a maria e igual a maria
         // se a catarina e igual a catarina
         // se o bruno e igual o bruno
-    })
 
     it.skip('Truthy', function() {
         const a = true
@@ -82,7 +82,7 @@ describe('Expects', function() {
         expect(students).to.be.a('Array')
     })
 
-    it.only('Numbers', function() {
+    it('Numbers', function() {
         const number = 4
         const pi = 3.14
 
@@ -92,5 +92,36 @@ describe('Expects', function() {
         
         expect(pi).to.be.above(2)
         expect(pi).below(3.15)
+    })
+    
+    // Validando Strings
+
+    it('Validando String', function(){
+        let name = "Vanilson"
+        expect(name).to.be.equal('Vanilson')
+        expect(name).eql('Vanilson')
+        expect(name).eql('Vanilson')
+        expect(name).equal('Vanilson')
+        expect(name).not.to.equal('Barack Obama')
+        expect(name).not.equal('Barack Obama')
+        expect(name).equal('Vanilson').and.not.equal('Barack  Obama')
+        expect(name.length).to.equal(8)
+
+    })
+    
+    it('Validando Array', function () {
+        let names = ['Joao','Maria','Catarina','Bruno']
+        expect(names[0]).to.equal('Joao')
+        expect(names[1]).to.equal('Maria')
+        expect(names[2]).to.equal('Catarina')
+        expect(names[3]).to.equal('Bruno')
+
+        expect(names[3]).not.to.equal('Joao')
+        expect(names[2]).not.to.equal('Maria')
+        expect(names[1]).not.to.equal('Catarina')
+        expect(names[0]).not.to.equal('Bruno')
+        expect(names[0]).contains('J')
+        expect(names[1]).contains('a')
+        
     })
 })
